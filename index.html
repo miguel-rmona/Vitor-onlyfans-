@@ -1,0 +1,410 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vitor - OnlyFans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Cores oficiais OnlyFans */
+        .of-blue { color: #00aff0; }
+        .bg-of-blue { background-color: #00aff0; }
+        .border-of-blue { border-color: #00aff0; }
+        
+        .of-dark { background-color: #242529; }
+        .of-dark-bg { background-color: #1a1a1a; }
+        
+        .border-of-dark { border-color: #8a96a3; }
+
+        /* Estilos do meme do aniversário */
+        .meme-text-top {
+            color: #FF2D55;
+            -webkit-text-stroke: 1.5px black;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .colorful-text span {
+            -webkit-text-stroke: 1.5px black;
+            text-shadow: 2px 2px 0 #000;
+            font-weight: 900;
+            display: inline-block;
+        }
+        .colorful-text span:nth-child(1) { color: #FF3B30; }
+        .colorful-text span:nth-child(2) { color: #FF9500; }
+        .colorful-text span:nth-child(3) { color: #FFCC00; }
+        .colorful-text span:nth-child(4) { color: #4CD964; }
+        .colorful-text span:nth-child(5) { color: #5AC8FA; }
+        .colorful-text span:nth-child(6) { color: #007AFF; }
+        .colorful-text span:nth-child(7) { color: #5856D6; }
+        .colorful-text span:nth-child(8) { color: #FF2D55; }
+        .colorful-text span:nth-child(9) { color: #FF3B30; }
+        .colorful-text span:nth-child(10) { color: #FF9500; }
+        .colorful-text span:nth-child(11) { color: #FFCC00; }
+        .colorful-text span:nth-child(12) { color: #4CD964; }
+        .colorful-text span:nth-child(13) { color: #5AC8FA; }
+
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Estilo para input focus */
+        .of-input:focus { border-color: #00aff0; outline: none; }
+    </style>
+</head>
+<body class="flex justify-center min-h-screen">
+
+    <!-- App Container -->
+    <div class="w-full max-w-[600px] of-dark-bg min-h-screen relative shadow-2xl border-x border-[#2f3035] overflow-x-hidden">
+        
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-[#1a1a1a]/95 backdrop-blur-md border-b border-[#2f3035] px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <!-- Seta Voltar -->
+                <button class="text-white hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </button>
+                
+                <!-- Nome Header -->
+                <div class="flex flex-col">
+                    <h1 id="headerName" class="text-lg font-bold leading-tight">Vitor</h1>
+                    <span class="text-[#8a96a3] text-xs">3 posts</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Banner Content -->
+        <div class="relative w-full h-[220px] bg-[#a8d5e5] overflow-hidden flex flex-col items-center justify-start pt-6">
+            <!-- Fundo simulando o quarto -->
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center opacity-40"></div>
+            
+            <div class="z-10 text-center w-full px-2">
+                <!-- Logotipo OnlyFans (Cadeado azul) -->
+                <div class="absolute top-2 left-2 flex items-center gap-1 z-20">
+                    <svg viewBox="0 0 24 24" fill="#00aff0" class="w-7 h-7">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path fill="#fff" d="M15.5 10.5a3.5 3.5 0 10-7 0v1.5H8v6h8v-6h-.5v-1.5zM12 12.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+                    </svg>
+                    <span class="text-white font-bold text-xl italic tracking-tighter" style="font-family: 'Arial', sans-serif;">Only<span class="of-blue font-medium">Fans</span></span>
+                </div>
+
+                <h2 class="meme-text-top text-3xl md:text-4xl mt-6">
+                    HOJE É MEU ANIVERSÁRIO! 🎂🥳
+                </h2>
+                
+                <div class="mt-4 colorful-text text-3xl md:text-4xl transform -rotate-2">
+                    <span>H</span><span>A</span><span>P</span><span>P</span><span>Y</span><span>✿</span><span>B</span><span>I</span><span>R</span><span>T</span><span>H</span><span>D</span><span>A</span><span>Y</span>
+                </div>
+            </div>
+            
+            <!-- Elementos Festivos -->
+            <div class="absolute top-10 left-5 text-4xl transform -rotate-12">🎉</div>
+            <div class="absolute top-12 right-8 text-3xl">🎊</div>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="px-4 pb-4">
+            <!-- Avatar Area -->
+            <div class="flex justify-between items-start -mt-12 relative z-20">
+                <div class="relative">
+                    <!-- Avatar Border -->
+                    <div class="w-[100px] h-[100px] rounded-full border-4 border-[#1a1a1a] bg-[#1a1a1a] relative overflow-hidden">
+                        <!-- Imagem de Perfil Atualizada -->
+                        <img src="Screenshot_20260606_160544_WhatsApp.jpg" alt="Vitor" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Chapeuzinho de festa -->
+                    <div class="absolute -top-6 -left-2 text-5xl transform -rotate-12 drop-shadow-lg z-30">🥳</div>
+                    <!-- Bolinha de Online -->
+                    <div class="absolute bottom-2 right-1 w-4 h-4 bg-[#44c04f] rounded-full border-[3px] border-[#1a1a1a] z-30"></div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-3 mt-14">
+                    <button class="bg-transparent text-white border border-[#8a96a3] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#2f3035] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                        </svg>
+                    </button>
+                    <!-- AQUI: Botão de Editar Perfil funcional -->
+                    <button onclick="openEditProfile()" class="bg-of-blue hover:bg-[#0091c7] text-white rounded-full px-8 py-[10px] font-bold text-[15px] transition-colors shadow-sm">
+                        EDIT PROFILE
+                    </button>
+                </div>
+            </div>
+
+            <!-- User Info -->
+            <div class="mt-3">
+                <h2 id="displayName" class="text-xl font-bold text-white flex items-center gap-1">Vitor</h2>
+                <div id="displayUsername" class="text-[#8a96a3] text-[15px]">@vitor_aniversario</div>
+            </div>
+
+            <!-- Bio -->
+            <div class="mt-5 mb-4">
+                <h3 class="text-[17px] font-bold mb-2">About</h3>
+                <!-- Escondendo valor real para facilitar a extração do texto sem as tags HTML -->
+                <div id="rawBioData" class="hidden">Com muita felicidade eu abro meu OnlyFans para começar a trabalhar a trabalhar no job etc.
+Subscrevam já para conteúdo exclusivo!
+#Job #Aniversário #Rico</div>
+                <!-- Bio exibida -->
+                <p id="displayBio" class="text-[15px] leading-relaxed text-[#e1e2e4] whitespace-pre-wrap">Com muita felicidade eu abro meu OnlyFans para começar a trabalhar a trabalhar no job etc.
+Subscrevam já para conteúdo exclusivo!
+<span class="of-blue hover:underline cursor-pointer">#Job</span> <span class="of-blue hover:underline cursor-pointer">#Aniversário</span> <span class="of-blue hover:underline cursor-pointer">#Rico</span></p>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="flex border-b border-[#2f3035]">
+            <button class="flex-1 py-3 text-white border-b-2 border-white font-medium text-[15px] text-center flex justify-center items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[18px] h-[18px]">
+                    <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5ZM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm6-4.5a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" clip-rule="evenodd" />
+                </svg>
+                3
+            </button>
+            <button class="flex-1 py-3 text-[#8a96a3] font-medium text-[15px] text-center flex justify-center items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[18px] h-[18px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>
+                0
+            </button>
+            <button class="flex-1 py-3 text-[#8a96a3] font-medium text-[15px] text-center flex justify-center items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[18px] h-[18px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Locked Media Grid -->
+        <div class="grid grid-cols-3 gap-[2px] p-[2px] bg-[#1a1a1a]">
+            <!-- Post 1 -->
+            <div class="aspect-[4/5] bg-[#242529] relative cursor-pointer overflow-hidden group" onclick="showModal('Vitor_1')">
+                <img src="image.jpg" class="w-full h-full object-cover blur-2xl opacity-60">
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <div class="bg-of-blue text-white px-[14px] py-[6px] rounded-full flex items-center gap-1 font-bold text-[13px] shadow-sm transform group-active:scale-95 transition-transform">
+                        <span>$</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[14px] h-[14px] mt-[1px]">
+                            <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 left-2 text-[13px] text-white font-medium drop-shadow-md">Vitor_1</div>
+            </div>
+            <!-- Post 2 -->
+            <div class="aspect-[4/5] bg-[#242529] relative cursor-pointer overflow-hidden group" onclick="showModal('Vitor_2')">
+                <img src="IMG-20260606-WA0013.jpg" class="w-full h-full object-cover blur-2xl opacity-60">
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <div class="bg-of-blue text-white px-[14px] py-[6px] rounded-full flex items-center gap-1 font-bold text-[13px] shadow-sm transform group-active:scale-95 transition-transform">
+                        <span>$</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[14px] h-[14px] mt-[1px]">
+                            <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 left-2 text-[13px] text-white font-medium drop-shadow-md">Vitor_2</div>
+            </div>
+            <!-- Post 3 -->
+            <div class="aspect-[4/5] bg-[#242529] relative cursor-pointer overflow-hidden group" onclick="showModal('Vitor_3')">
+                <img src="IMG-20260606-WA0011.jpg" class="w-full h-full object-cover blur-2xl opacity-60">
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <div class="bg-of-blue text-white px-[14px] py-[6px] rounded-full flex items-center gap-1 font-bold text-[13px] shadow-sm transform group-active:scale-95 transition-transform">
+                        <span>$</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[14px] h-[14px] mt-[1px]">
+                            <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 left-2 text-[13px] text-white font-medium drop-shadow-md">Vitor_3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar Perfil -->
+    <div id="editProfileModal" class="fixed inset-0 z-[110] bg-black/60 hidden justify-center items-end sm:items-center">
+        <!-- Container do Modal com Slide Animation -->
+        <div id="editProfileContent" class="bg-of-dark w-full max-w-[600px] h-[90vh] sm:h-auto sm:max-h-[90vh] sm:rounded-xl overflow-hidden flex flex-col transform translate-y-full transition-transform duration-300 ease-out shadow-2xl">
+            
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center px-4 py-3 border-b border-[#2f3035] bg-of-dark-bg">
+                <button onclick="closeEditProfile()" class="text-white hover:text-gray-300 font-medium">Cancelar</button>
+                <h2 class="text-white font-bold text-lg">Editar Perfil</h2>
+                <button onclick="saveProfile()" class="text-of-blue hover:text-[#0091c7] font-bold">Guardar</button>
+            </div>
+
+            <!-- Modal Body (Scrollable) -->
+            <div class="flex-1 overflow-y-auto pb-10">
+                <!-- Capa e Avatar falsos para decoração -->
+                <div class="w-full h-32 bg-[#a8d5e5] relative flex justify-center items-center">
+                    <span class="bg-black/50 text-white px-3 py-1 rounded-full text-xs flex items-center gap-1 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" /></svg>
+                        Alterar Capa
+                    </span>
+                </div>
+                <div class="px-4 relative -mt-10 mb-6">
+                    <div class="w-[80px] h-[80px] rounded-full border-4 border-[#242529] bg-[#1a1a1a] relative overflow-hidden flex items-center justify-center cursor-pointer">
+                        <img src="Screenshot_20260606_160544_WhatsApp.jpg" class="w-full h-full object-cover opacity-60">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 absolute text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" /></svg>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="px-4 space-y-5">
+                    <div>
+                        <label class="text-[#8a96a3] text-[13px] font-medium tracking-wide uppercase">Nome de Apresentação</label>
+                        <input type="text" id="inputName" class="of-input w-full bg-transparent border-b border-[#2f3035] text-white py-2 text-[15px] transition-colors">
+                    </div>
+                    
+                    <div>
+                        <label class="text-[#8a96a3] text-[13px] font-medium tracking-wide uppercase">Nome de Utilizador</label>
+                        <div class="relative flex items-center">
+                            <span class="absolute left-0 text-white py-2">@</span>
+                            <input type="text" id="inputUsername" class="of-input w-full bg-transparent border-b border-[#2f3035] text-white py-2 pl-4 text-[15px] transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-[#8a96a3] text-[13px] font-medium tracking-wide uppercase">Biografia</label>
+                        <textarea id="inputBio" class="of-input w-full bg-transparent border-b border-[#2f3035] text-white py-2 text-[15px] min-h-[120px] resize-none transition-colors" placeholder="Fala um pouco sobre ti..."></textarea>
+                        <div class="text-[#8a96a3] text-xs mt-1 text-right">As #hashtags ficarão azuis.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Meme Pix -->
+    <div id="memeModal" class="fixed inset-0 z-[100] bg-black/80 hidden items-center justify-center p-4">
+        <div class="bg-[#242529] border border-[#2f3035] rounded-xl max-w-sm w-full p-6 text-center shadow-2xl transform scale-95 transition-transform duration-200" id="modalContent">
+            <div class="w-16 h-16 bg-of-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Desbloquear <span id="postName" class="of-blue"></span></h3>
+            <p class="text-[#8a96a3] mb-6 text-[15px] leading-relaxed">
+                Este conteúdo é exclusivo para os verdadeiros fãs! Ajuda o aniversariante no "job" e envia um Pix de presente para desbloquear. 🎂💸
+            </p>
+            <div class="flex flex-col gap-3">
+                <button onclick="closeModal()" class="bg-of-blue hover:bg-[#0091c7] text-white font-bold py-3 rounded-full transition-colors w-full uppercase text-[15px]">
+                    Enviar Pix de Aniversário
+                </button>
+                <button onclick="closeModal()" class="bg-transparent hover:bg-[#2f3035] text-[#8a96a3] font-bold py-3 rounded-full transition-colors w-full uppercase text-[15px]">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Funções para o Modal de "Pagamento"
+        function showModal(postName) {
+            const modal = document.getElementById('memeModal');
+            const nameSpan = document.getElementById('postName');
+            const content = document.getElementById('modalContent');
+            
+            nameSpan.innerText = postName;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            setTimeout(() => {
+                content.classList.remove('scale-95');
+                content.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('memeModal');
+            const content = document.getElementById('modalContent');
+            
+            content.classList.remove('scale-100');
+            content.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 200);
+        }
+
+        // --- Funções para Edição de Perfil ---
+        function openEditProfile() {
+            const modal = document.getElementById('editProfileModal');
+            const content = document.getElementById('editProfileContent');
+
+            // Carregar os dados atuais para os inputs
+            const currentName = document.getElementById('displayName').innerText;
+            const currentUsername = document.getElementById('displayUsername').innerText.replace('@', '');
+            const currentBio = document.getElementById('rawBioData').innerText;
+
+            document.getElementById('inputName').value = currentName;
+            document.getElementById('inputUsername').value = currentUsername;
+            document.getElementById('inputBio').value = currentBio;
+
+            // Abrir com animação
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Pequeno delay para garantir que a transição CSS funciona
+            setTimeout(() => {
+                content.classList.remove('translate-y-full');
+            }, 10);
+        }
+
+        function closeEditProfile() {
+            const modal = document.getElementById('editProfileModal');
+            const content = document.getElementById('editProfileContent');
+
+            // Fechar com animação
+            content.classList.add('translate-y-full');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300); // Tempo igual à transição no CSS (duration-300)
+        }
+
+        function saveProfile() {
+            // Obter os valores dos inputs
+            const newName = document.getElementById('inputName').value;
+            const newUsername = document.getElementById('inputUsername').value;
+            const newBioText = document.getElementById('inputBio').value;
+
+            // 1. Atualizar o Nome
+            document.getElementById('displayName').innerText = newName;
+            document.getElementById('headerName').innerText = newName;
+
+            // 2. Atualizar o Nome de Utilizador (adiciona o @)
+            // Se o utilizador digitou espaços ou @, limpamos
+            const cleanUsername = newUsername.replace(/\s+/g, '').replace('@', '');
+            document.getElementById('displayUsername').innerText = '@' + cleanUsername;
+
+            // 3. Atualizar a Biografia
+            // Guardar texto em bruto para editar depois
+            document.getElementById('rawBioData').innerText = newBioText;
+
+            // Transformar #hashtags num span com estilo azul e manter as quebras de linha normais do CSS
+            // Regex procura por palavras iniciadas por #
+            const formattedBio = newBioText.replace(/(#[a-zA-ZÀ-ÿ0-9_]+)/g, '<span class="of-blue hover:underline cursor-pointer">$1</span>');
+            
+            // Inserir no ecrã principal
+            document.getElementById('displayBio').innerHTML = formattedBio;
+
+            // Fechar o menu
+            closeEditProfile();
+        }
+    </script>
+</body>
+</html>
+
+
+```
